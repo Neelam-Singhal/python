@@ -1,0 +1,13 @@
+import random
+
+
+min = 1
+max = 6
+
+rolldice = "Yes"
+
+while rolldice == "Yes":
+    print(random.randint(min,max))
+    rolldice = input("Roll again? Yes/No")
+    if rolldice != "Yes":
+        rolldice = input("Are you sure?")
