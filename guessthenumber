@@ -1,0 +1,20 @@
+import random
+
+randomnum = random.randint(0,50)
+
+num = input("Guess a number ")
+num = int(num)
+
+
+while num != randomnum:
+    if(num < randomnum):
+        num = input("It is smaller than the number. Please try again: ")
+        num = int(num)
+
+    if(num > randomnum):
+        num = input("It is larger than the number. Please try again: ")
+        num = int(num)
+
+
+if(num == randomnum):
+    print("Exactly")
